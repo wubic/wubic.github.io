@@ -1,11 +1,11 @@
 @font-face {
 	font-family: DroidSerifBold;
-	src: url("fonts/DroidSerif-Bold.ttf");
+	src: url("http://www.wubic.se/fonts/DroidSerif-Bold.ttf");
 }
 
 @font-face {
 	font-family: DroidSerifRegular;
-	src: url("fonts/DroidSerif-Regular.ttf");
+	src: url("http://www.wubic.se/fonts/DroidSerif-Regular.ttf");
 }
 
 html,body {
