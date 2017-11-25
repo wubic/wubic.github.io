@@ -23,8 +23,8 @@ html,body {
 #nav header {
 	margin: 0%;
 	padding: 0%;
-	padding-top: 10.5%;
-	padding-bottom: 10.5%;
+	padding-top: 6.5%;
+	padding-bottom: 6.5%;
 	margin-bottom: 6.5%;
 	background-color: #4b96bc;
 
@@ -80,6 +80,7 @@ html,body {
 	#cma article {
 		margin: auto;
 		padding: auto;
+		margin-bottom: 2%;
 		text-align: justify;
 		letter-spacing: 1px;
 		word-spacing: 2px;
@@ -93,6 +94,7 @@ html,body {
 	#cma article {
 		margin: auto;
 		padding: auto;
+		margin-bottom: 2%;
 		text-align: justify;
 		letter-spacing: 1px;
 		word-spacing: 2px;
@@ -101,7 +103,6 @@ html,body {
 		color: #000000;
 	}
 }
-
 
 #cma ul {
 	list-style-type: none;
