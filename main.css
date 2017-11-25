@@ -76,7 +76,7 @@ html,body {
 	word-spacing: 2px;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (orientation: portrait) {
 	#cma article {
 		margin: auto;
 		padding: auto;
@@ -89,7 +89,7 @@ html,body {
 	}
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (orientation: landscape) {
 	#cma article {
 		margin: auto;
 		padding: auto;
@@ -101,6 +101,7 @@ html,body {
 		color: #000000;
 	}
 }
+
 
 #cma ul {
 	list-style-type: none;
