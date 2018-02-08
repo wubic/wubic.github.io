@@ -26,19 +26,6 @@
 	<article>
 		<p id="reddit"></p>
 	</article>
-	<script language="javascript">
-		var request = new XMLHttpRequest();
-		request.withCredentials = false;
-		request.open("GET", "https://www.reddit.com/r/wubic/.rss", true)
-		request.onreadystatechange = function() {
-			if (this.readyState == 4 && this.status == 200) {
-				var parser = new DOMParser();
-				xml = parser.parseFromString(request.responseXML,"text/xml");
-				document.getElementById("reddit").innerHTML = xml.getElementByTagName("entry")[0].innerHTML;
-			}
-		}
-		request.send();
-	</script>
 </div>
 </body>
 </html>
