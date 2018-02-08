@@ -22,25 +22,21 @@
 		<header>Testing GitHub pages</header>
 		<p>October 25, 2017</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque egestas, quam ut aliquet molestie, diam risus luctus enim, non feugiat risus massa ac metus. Aliquam erat volutpat. Donec eget nulla et orci condimentum consectetur vitae eu purus. Integer egestas massa a odio aliquet dignissim. Nullam vel nisl pharetra, fringilla velit id, ultrices est. Cras eget luctus ligula. Suspendisse nec molestie neque. Nulla pharetra ac lectus sed tempus. Maecenas venenatis turpis eget tortor auctor sollicitudin. Donec blandit tristique lorem. Aliquam erat volutpat. Mauris sed orci id orci luctus interdum ut nec est. Etiam in dolor ultrices, tincidunt tortor sit amet, lacinia lectus. Sed semper orci in diam pharetra interdum eget auctor neque. Fusce in mi bibendum, molestie ligula in, varius massa. Proin facilisis justo ut arcu faucibus dictum vitae at arcu.</p>
-	</article>-->
+	</article>
 	<article>
 		<p id="reddit"></p>
 	</article>
 	<script language="javascript">
 		var request = new XMLHttpRequest();
-		if('withCredentials' in request) {
-			console.log("test");
-		} else {
-			request.open("GET", "https://www.reddit.com/r/wubic/.rss", true)
-			request.onreadystatechange = function() {
-				if (this.readyState == 4 && this.status == 200) {
-					var parser = new DOMParser();
-					xml = parser.parseFromString(request.responseXML,"text/xml");
-					document.getElementById("reddit").innerHTML = xml.getElementByTagName("entry")[0].innerHTML;
-				}
+		request.open("GET", "https://www.reddit.com/r/wubic/.rss", true)
+		request.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				var parser = new DOMParser();
+				xml = parser.parseFromString(request.responseXML,"text/xml");
+				document.getElementById("reddit").innerHTML = xml.getElementByTagName("entry")[0].innerHTML;
 			}
-			request.send();
 		}
+		request.send();
 	</script>
 </div>
 </body>
